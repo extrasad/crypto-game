@@ -47,7 +47,6 @@ export class Player extends Actor {
 
     if (this.keyW?.isDown) {
         this.body.velocity.y = -110;
-        console.log(this.anims.isPlaying)
 		!this.anims.isPlaying && this.anims.play('run', true);
     }
 
