@@ -15,6 +15,11 @@ export class LoadingScene extends Scene {
 	  this.load.baseURL = 'assets/';
 	  // key: 'king'
 	  // path from baseURL to file: 'sprites/king.png'
+    this.load.image({
+      key: 'tiles',
+      url: 'tilemaps/tiles/dungeon-16-16.png',
+    });
+    this.load.tilemapTiledJSON('dungeon', 'tilemaps/json/dungeon.json');
 	  this.load.image('king', 'sprites/king.png');
     this.load.atlas('a-king', 'spritesheets/a-king.png', 'spritesheets/a-king_atlas.json');
   }
